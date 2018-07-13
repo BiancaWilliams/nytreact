@@ -6,7 +6,7 @@
   "scripts": {
     "server": "node server.js",
     "client": "cd client && npm run start",
-    "start": "./node_modules/.bin/concurrently \"./node_modules/.bin/nodemon\" \"npm run client\"",
+    "start": "concurrently \"./node_modules/.bin/nodemon\" \"npm run client\"",
     "build": "cd client && npm run build",
     "deploy": "yarn build && git add . && git commit -m \"Building for production\" && git push heroku master",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,7 +18,19 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
-    "express": "^4.15.4",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongodb": "^3.1.1",
+    "mongoose": "^5.2.3",
+    "path": "^0.12.7",
     "yarn": "^1.7.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BiancaWilliams/nytreact.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BiancaWilliams/nytreact/issues"
+  },
+  "homepage": "https://github.com/BiancaWilliams/nytreact#readme"
 }
