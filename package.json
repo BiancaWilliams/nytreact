@@ -1,34 +1,29 @@
 {
-  "name": "mern",
+  "name": "nytreact",
   "version": "1.0.0",
-  "description": "Mern Demo",
+  "description": "react app nyt",
   "main": "server.js",
-  "scripts": {
-    "server": "node server.js",
-    "client": "cd client && npm run start",
-    "start": "concurrently \"./node_modules/.bin/nodemon\" \"npm run client\"",
-    "build": "cd client && npm run build",
-    "deploy": "yarn build && git add . && git commit -m \"Building for production\" && git push heroku master",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "concurrently": "^3.5.0",
-    "nodemon": "^1.11.0"
-  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "mongodb": "^3.1.1",
     "mongoose": "^5.2.3",
     "path": "^0.12.7",
+    "react": "^16.4.1",
+    "request": "^2.87.0",
     "yarn": "^1.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BiancaWilliams/nytreact.git"
   },
+  "author": "Bianca Williams",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/BiancaWilliams/nytreact/issues"
   },
